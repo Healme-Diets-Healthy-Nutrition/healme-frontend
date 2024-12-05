@@ -1,0 +1,44 @@
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  html{
+    *,  
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+    
+    
+    @apply font-raleway;
+
+    button {
+      padding: 0;
+      font: inherit;
+      background-color: transparent;
+    }
+    
+    :root {
+      --rose-taupe: #7D4F50;
+      --old-rose: #CC8B86;
+      --linen: #F9EAE1;
+      --dark-gray: #747474;
+      --white-smoke: #F8F8F8;
+      --light-grayish-orange: #F3D0C3;
+      --grayish-red: #B39391;
+      --hover-outline: #E5CEBF;
+    }
+  }
+}
