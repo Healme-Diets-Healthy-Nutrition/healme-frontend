@@ -106,6 +106,15 @@ const MainPage: React.FC = () => {
           </div>
         </div>
       </section>
+      <section>
+        <div>
+          <img src="/src/assets/images/MainPage/Almond-Orange-Healthy-Granola-Bars-with-Coconut-and-Honey-500x375.png" alt="pic" />
+          <div></div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
     </>
   );
 };
