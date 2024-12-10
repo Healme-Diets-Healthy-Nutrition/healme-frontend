@@ -12,7 +12,7 @@ const MainPage: React.FC = () => {
             We encourage people to eat healthy and affordable
           </p>
         </div>
-        <img src="/src/assets/images/MainPage/Emotiwaves.png" alt="pic" />
+        <img src="/src/assets/images/MainPage/Emotiwaves.png" alt="pic" className="w-full"/>
       </section>
       <section className="m-3 mb-23">
         <h2 className="text-3xl text-center mb-14">Our priorities</h2>
