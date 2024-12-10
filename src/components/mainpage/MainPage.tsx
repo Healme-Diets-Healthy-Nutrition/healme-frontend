@@ -106,15 +106,31 @@ const MainPage: React.FC = () => {
           </div>
         </div>
       </section>
-      <section>
-        <div>
-          <img src="/src/assets/images/MainPage/Almond-Orange-Healthy-Granola-Bars-with-Coconut-and-Honey-500x375.png" alt="pic" />
-          <div></div>
+      <section className="grid grid-cols-2 gap-4 mx-auto my-8 w-fit">
+        <div className="w-131 h-120 bg-grayish-red  rounded-b-xl">
+          <img src="/src/assets/images/MainPage/Almond-Orange-Healthy-Granola-Bars-with-Coconut-and-Honey-500x375.jpg" alt="pic" className="w-131" />
+          <div className="w-12 h-8 bg-rose-taupe rounded-2xl text-xs text-white-smoke flex items-center justify-center mt-3 ml-3">Article</div>
+          <p className="text-white-smoke mx-3 mt-2">12 Healthy Granola Bars</p>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div className="w-131 h-120 bg-grayish-red  rounded-b-xl">
+          <img src="\src\assets\images\Mainpage\cf189f61d1b1221fe0ca3eac18dfc218639d5384.webp" alt="pic" className="w-131" />
+          <div className="w-12 h-8 bg-rose-taupe rounded-2xl text-xs text-white-smoke flex items-center justify-center mt-3 ml-3">Article</div>
+          <p className="text-white-smoke mx-3 mt-2">The 7 Best Rice Cookers for Perfect Rice Every Time</p>
+        </div>
+        <div className="w-131 h-120 bg-grayish-red  rounded-b-xl">
+          <img src="\src\assets\images\Mainpage\fish_food_omega_image_one-750x422.jpg" alt="pic" className="w-131 h-[453px]" />
+          <div className="w-12 h-8 bg-rose-taupe rounded-2xl text-xs text-white-smoke flex items-center justify-center mt-3 ml-3">Article</div>
+          <p className="text-white-smoke mx-3 mt-2">Benefits of Eating Fish</p>
+        </div>
+        <div className="w-131 h-120 bg-grayish-red  rounded-b-xl">
+          <img src="\src\assets\images\Mainpage\spices_good_1-750x468.jpg" alt="pic" className="w-131 h-[453px]" />
+          <div className="w-12 h-8 bg-rose-taupe rounded-2xl text-xs text-white-smoke flex items-center justify-center mt-3 ml-3">Article</div>
+          <p className="text-white-smoke mx-3 mt-2">The Healthiest Spices You Can Use Every Day</p>
+        </div>
       </section>
+      <div className="mb-8">
+        <img src="\src\assets\images\Mainpage\lawrence-kayku-ZVKr8wADhpc-unsplash.jpg" alt="pic" className="w-screen h-96 object-cover" />
+      </div>
     </>
   );
 };
