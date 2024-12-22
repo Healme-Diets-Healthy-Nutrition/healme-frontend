@@ -1,14 +1,19 @@
 import React from 'react';
 import Navigation from './components/navbar/Navigation';
-import MainPage from './components/mainpage/MainPage';
+import MainPage from './components/pages/mainpage/MainPage';
 import Footer from './components/footer/Footer';
+import Calories from './components/pages/mainpage/Fivepages/Calories';
+import { Route, Routes } from 'react-router';
 
 const App: React.FC = () => {
 
   return (
     <>
-    <Navigation></Navigation>
-      <MainPage></MainPage>
+      <Navigation></Navigation>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/calories" element={<Calories />} />
+      </Routes>
       <Footer></Footer>
     </>
   );
