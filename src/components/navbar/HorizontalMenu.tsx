@@ -25,12 +25,12 @@ const HorizontalMenu: React.FC = () => {
           <IconArticle className="fill-rose-taupe w-8 h-8" />
           <h3 className="text-lg">Articles</h3>
         </div>
-        <div className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
-          <Link to="/calories" ></Link>
+        <Link to="/calories" className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
+          
           <IconCalories className="fill-rose-taupe w-8 h-8" />
           <h3 className="text-lg">Calories</h3>
 
-        </div>
+        </Link>
       </div>
     </>
   );

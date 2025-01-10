@@ -86,6 +86,7 @@ export default {
         40: "10rem",
         44: "11rem",
         48: "4.8rem",
+        49: "12rem",
         50: "12.5rem",
         52: "13rem",
         56: "14rem",
@@ -130,5 +131,12 @@ export default {
   plugins: [
     require("@tailwindcss/typography"), // Optional plugin for better typography
     require("@tailwindcss/forms"), // Optional plugin for better form styling
+    function ({ addComponents }) {
+      addComponents({
+        '.mrt-SortIcon': {
+          '@apply text-sm m-0': {}, // Apply Tailwind styles
+        },
+      });
+    },
   ],
 };
