@@ -22,12 +22,12 @@ const buttonVariants = cva("rounded-2xl", {
   variants: {
     variant: {
       outline:
-        " bg-white-smoke border border-rose-taupe w-124 h-44 hover:bg-linen",
+        " bg-white-smoke border border-rose-taupe w-30 h-11 hover:bg-hover-outline",
     },
     size: {
-      sm: "w-124 h-44",
-      md: "w-124 h-44",
-      lg: "w-124 h-44",
+      sm: "w-30 h-11",
+      md: "w-30 h-11",
+      lg: "w-30 h-11",
     },
   },
   defaultVariants: {

@@ -48,14 +48,13 @@ export default {
     extend: {
       spacing: {
         px: "1px",
-        0: "0",
-        0.5: "0.125rem",
+        "0.5": "0.125rem",
         1: "0.25rem",
-        1.5: "0.375rem",
+        "1.5": "0.375rem",
         2: "0.5rem",
-        2.5: "0.625rem",
+        "2.5": "0.625rem",
         3: "0.75rem",
-        3.5: "0.875rem",
+        "3.5": "0.875rem",
         4: "1rem",
         5: "1.25rem",
         6: "1.5rem",
@@ -66,8 +65,8 @@ export default {
         11: "2.75rem",
         12: "3rem",
         13: "3.125rem",
-        13.5: "3,3125rem",
         14: "3.5rem",
+        15: "3.75rem",
         16: "4rem",
         19: "4.75rem",
         20: "5rem",
@@ -76,42 +75,28 @@ export default {
         25: "6.25rem",
         26: "6.5rem",
         28: "7rem",
-        29: "7.5rem",
-        30: "7.75rem",
+        30: "7.5rem",
         32: "8rem",
         36: "9rem",
-        37: "9.125rem",
-        38: "9.5rem",
-        39: "9.875rem",
         40: "10rem",
         44: "11rem",
-        48: "4.8rem",
-        49: "12rem",
-        50: "12.5rem",
+        48: "12rem",
         52: "13rem",
         56: "14rem",
         60: "15rem",
         64: "16rem",
         69: "17.8125rem",
         72: "18rem",
-        73: "18.125rem",
-        76: "18.5rem",
-        77: "18.75rem",
-        79: "19.25rem",
+        76: "19rem",
         80: "20rem",
-        84: "21.5rem",
         96: "24rem",
         100: "25rem",
         110: "30rem",
         112: "31.625rem",
         120: "33.25rem",
         128: "34.375rem",
-        131 :"37.75rem",
-        15.2: "15.2rem",
-        44: "2.75rem",
-        124: "7.75rem",
-        152: "9.375rem",
-
+        152: "38rem",
+        256: "64rem", 
       },
       colors: {
         "rose-taupe": "#7D4F50",
@@ -121,7 +106,7 @@ export default {
         "white-smoke": "#F8F8F8",
         "light-grayish-orange": "#F3D0C3",
         "grayish-red": "#B39391",
-        "hover-outline": "#E5CEBF",
+        "hover-outline": "#f2f0ef",
       },
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],
@@ -131,12 +116,5 @@ export default {
   plugins: [
     require("@tailwindcss/typography"), // Optional plugin for better typography
     require("@tailwindcss/forms"), // Optional plugin for better form styling
-    function ({ addComponents }) {
-      addComponents({
-        '.mrt-SortIcon': {
-          '@apply text-sm m-0': {}, // Apply Tailwind styles
-        },
-      });
-    },
   ],
 };

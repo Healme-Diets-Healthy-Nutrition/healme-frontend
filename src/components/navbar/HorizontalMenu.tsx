@@ -8,7 +8,7 @@ import { Link } from "react-router";
 const HorizontalMenu: React.FC = () => {
   return (
     <>
-      <div className="h-13 w-full  flex">
+      <div className="h-13 w-full flex">
         <div className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
           <IconRecipes className="fill-rose-taupe w-8 h-8" />
           <h3 className="text-lg">Recipes</h3>
@@ -26,10 +26,8 @@ const HorizontalMenu: React.FC = () => {
           <h3 className="text-lg">Articles</h3>
         </div>
         <Link to="/calories" className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
-          
           <IconCalories className="fill-rose-taupe w-8 h-8" />
           <h3 className="text-lg">Calories</h3>
-
         </Link>
       </div>
     </>
