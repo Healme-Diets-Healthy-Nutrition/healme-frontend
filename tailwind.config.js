@@ -92,11 +92,14 @@ export default {
         96: "24rem",
         100: "25rem",
         110: "30rem",
+        112: "28rem", // 448
         112: "31.625rem",
         120: "33.25rem",
         128: "34.375rem",
-        152: "38rem",
-        256: "64rem", 
+        144: "36rem", // 576
+        152: "38rem", 
+        192: "48rem", //768
+        256: "64rem",  //1024
       },
       colors: {
         "rose-taupe": "#7D4F50",
@@ -115,6 +118,5 @@ export default {
   },
   plugins: [
     require("@tailwindcss/typography"), // Optional plugin for better typography
-    require("@tailwindcss/forms"), // Optional plugin for better form styling
   ],
 };

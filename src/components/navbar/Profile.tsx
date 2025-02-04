@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from "../modal/index.tsx";
-import Button from "../buttons/MyButton.tsx"
+import MyButton from "../buttons/MyButton.tsx";
+import TextField from '@mui/material/TextField';
 
 const Profile: React.FC = () => {
   const [isModalActive, setModalActive] = useState(false);
@@ -14,23 +15,21 @@ const Profile: React.FC = () => {
 
   return (
     <>
- <div className="flex flex-col items-center justify-center">
+ <div className="flex flex-col items-center justify-center focus:outline-hidden">
       <div className="flex gap-x-4">
         <button>Login</button>
-        <Button onClick={handleModalOpen}>
+        <MyButton onClick={handleModalOpen}>
           Sign Up
-        </Button>
+        </MyButton>
       </div>
 
       {isModalActive && (
-        <Modal title="Modal Title" onClose={handleModalClose}>
-          <p>This is the modal content!</p>
-          <button
-            className="mt-4 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300"
-            onClick={handleModalClose}
-          >
-            Close Modal
-          </button>
+        <Modal title="Sign Up" onClose={handleModalClose} >
+        <TextField id="outlined-basic" label="Login" variant="outlined" className="flex align-center justify-center"/>
+        <TextField id="outlined-basic" label="Password" variant="outlined" />
+        <MyButton>Sign Up</MyButton>
+        <div className="w-[40%] bg-linen rounded-r-xl"></div>
+
         </Modal>
       )}
     </div>
