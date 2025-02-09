@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown, { LanguageOption } from '../buttons/dropdown/DropDownButton';
+import Dropdown, { LanguageOption } from '../../components/buttons/dropdown/DropDownButton';
 import USFlag from "/src/assets/icons/flags/twemoji--flag-united-states.svg?react";
 import RUFlag from "/src/assets/icons/flags/twemoji--flag-russia.svg?react";
 import KZFlag from "/src/assets/icons/flags/twemoji--flag-kazakhstan.svg?react";
@@ -51,8 +51,8 @@ const Footer: React.FC = () => {
                     onSelect={handleLanguageChange}
                 />
             </div>
-            <hr className="w-1/2 h-0.5 bg-white flex items-center justify-center mx-auto my-2" />
-            <div className="flex items-center justify-between mx-16 my-8">
+            <hr className="w-1/2 h-0.5 bg-white flex items-center justify-center mx-auto my-20" />
+            <div className="flex justify-between mx-16 my-8">
                 <span className="text-white">HealMe © 2025 All rights reserved</span>
                 <span className="flex items-center space-x-4">
                     <IconX className="w-8 h-8 fill-rose-taupe hover:fill-[#000000]" />

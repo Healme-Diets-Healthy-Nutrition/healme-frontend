@@ -18,7 +18,8 @@ const createContainer = (options: containerOptions) => {
   mountNode.appendChild(portalContainer);
 };
 
-const PORTAL_ERROR_MSG = `There is no portal container in markup. Please add portal container with proper id attribute.`;
+const PORTAL_ERROR_MSG = `There is no portal container in markup. Please add portal container with proper id attribute.export { createContainer, PORTAL_ERROR_MSG };
+`;
 type PortalProps = {
   id: string;
   children: React.ReactNode;

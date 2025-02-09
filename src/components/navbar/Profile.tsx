@@ -2,6 +2,11 @@ import React, { useState } from 'react';
 import Modal from "../modal/index.tsx";
 import MyButton from "../buttons/MyButton.tsx";
 import TextField from '@mui/material/TextField';
+import IconApple from '../../assets/icons/brandIcons/socials/devicon--apple.svg?react'
+import IconFaceBook from '../../assets/icons/brandIcons/socials/devicon--facebook.svg?react'
+import IconGoogle from '../../assets/icons/brandIcons/socials/devicon--google.svg?react'
+import IconTwitter from '../../assets/icons/brandIcons/socials/devicon--twitter.svg?react'
+import { Checkbox, FormControlLabel } from '@mui/material';
 
 const Profile: React.FC = () => {
   const [isModalActive, setModalActive] = useState(false);
@@ -15,24 +20,53 @@ const Profile: React.FC = () => {
 
   return (
     <>
- <div className="flex flex-col items-center justify-center focus:outline-hidden">
-      <div className="flex gap-x-4">
-        <button>Login</button>
-        <MyButton onClick={handleModalOpen}>
-          Sign Up
-        </MyButton>
+      <div className="flex flex-col items-center justify-center focus:outline-hidden">
+        <div className="flex gap-x-4">
+          <button>Login</button>
+          <MyButton onClick={handleModalOpen}>
+            Sign Up
+          </MyButton>
+        </div>
+        {isModalActive && (
+          <Modal onClose={handleModalClose} >
+            <div className="flex w-full h-full bg-white overflow-hidden">
+              <div className="w-[60%] flex flex-col items-center justify-center gap-4 p-6">
+                <div className=''>
+                  <div className='flex flex-col items-center justify-center space-y-4'>
+                    <span>Sign Up</span>
+                    <TextField fullWidth id="login" label="Login" variant="outlined" />
+                    <TextField fullWidth id="password" label="Password" type="password" variant="outlined" />
+                    <MyButton>Sign Up</MyButton>
+                    <div className="flex items-center w-full my-4">
+                      <div className="flex-1 border-t border-gray-300"></div>
+                      <span className="px-4 text-gray-600 text-sm">or</span>
+                      <div className="flex-1 border-t border-gray-300"></div>
+                    </div>
+                  </div>
+                  <div className='flex items-center justify-center w-full space-x-4 mt-4'>
+                    <a className='w-16 h-16 bg-linen rounded-full flex items-center justify-center cursor-pointer'>
+                      <IconApple className='w-8 h-8' />
+                    </a>
+                    <a className='w-16 h-16 bg-linen rounded-full flex items-center justify-center cursor-pointer'>
+                      <IconFaceBook className='w-8 h-8' />
+                    </a>
+                    <a className='w-16 h-16 bg-linen rounded-full flex items-center justify-center cursor-pointer'>
+                      <IconGoogle className='w-8 h-8' />
+                    </a>
+                    <a className='w-16 h-16 bg-linen rounded-full flex items-center justify-center cursor-pointer'>
+                      <IconTwitter className='w-8 h-8' />
+                    </a>
+                  </div>
+                  <div className='space-y-4 mt-4'>
+                    <FormControlLabel required control={<Checkbox />} label="I agree to receive the newsletter" />
+                    <p>By using this site, you automatically create or use an existing account on HealMe, agree to the processing of personal data and accept the terms <span className='underline font-semibold'>HealMe User Agreement <a className='cursor-pointer'>Show more</a></span></p></div>
+                </div>
+              </div>
+              <div className="w-[40%] bg-linen rounded-r-xl"></div>
+            </div>
+          </Modal>
+        )}
       </div>
-
-      {isModalActive && (
-        <Modal title="Sign Up" onClose={handleModalClose} >
-        <TextField id="outlined-basic" label="Login" variant="outlined" className="flex align-center justify-center"/>
-        <TextField id="outlined-basic" label="Password" variant="outlined" />
-        <MyButton>Sign Up</MyButton>
-        <div className="w-[40%] bg-linen rounded-r-xl"></div>
-
-        </Modal>
-      )}
-    </div>
     </>
   );
 };
