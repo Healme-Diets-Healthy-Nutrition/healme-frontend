@@ -47,14 +47,14 @@ const Calories: React.FC = () => {
     suppressScrollOnNewData: true,
   }
 
-  const [rowData1, setRowData1] = React.useState<RowData1[]>([
+  const [rowData1] = React.useState<RowData1[]>([
     { nutrient: 'Protein', value: 168.32 + ' g' },
     { nutrient: 'Carbs', value: 303.94 + ' g' },
     { nutrient: 'Fats', value: 60.35 + ' g' },
     { nutrient: 'Total', value: 1332.28 + ' g' },
   ]);
 
-  const [colDefs1, setColDefs1] = React.useState<ColDef<RowData1>[]>([
+  const [colDefs1] = React.useState<ColDef<RowData1>[]>([
     { field: 'nutrient' },
     { field: 'value' },
   ]);
@@ -67,7 +67,7 @@ const Calories: React.FC = () => {
     
   }
 
-  const [rowData2, setRowData2] = React.useState<RowData2[]>([
+  const [rowData2] = React.useState<RowData2[]>([
     { food: 'Apple', time: '08:20', quantity: 1, protein: 23.5, carbohydrates: 100, fats: 30, calories: 18},
     { food: 'Eggs', time: '08:33', quantity: 3, protein: 56.6, carbohydrates: 120, fats: 46.3, calories: 16},
     { food: 'Bolognese', time: '12:20', quantity: 12, protein: 78, carbohydrates: 78.5, fats: 145, calories: 167},
@@ -77,7 +77,7 @@ const Calories: React.FC = () => {
     { food: 'Chicken soup', time: '20:30', quantity: 15, protein: 10, carbohydrates: 99, fats: 17.7, calories: 123},
 ]);
 
-  const [colDefs2, setColDefs2] = React.useState<ColDef<RowData2>[]>([
+  const [colDefs2] = React.useState<ColDef<RowData2>[]>([
     { field: 'food', flex: 1 },
     { field: 'time', flex: 1 },
     { field: 'quantity', flex: 1 },
@@ -89,7 +89,6 @@ const Calories: React.FC = () => {
 
   return (
     <div className="grid grid-cols-12 gap-6 items-start bg-gray-100 p-6">
-            {/* Smaller Table on the Left */}
             <div className="col-span-3 bg-rose-taupe text-white p-6 rounded-lg shadow-lg">
                 <h2 className="text-lg font-semibold mb-4">Today</h2>
                 <div className="ag-theme-alpine h-64 w-full">
@@ -97,7 +96,6 @@ const Calories: React.FC = () => {
                 </div>
             </div>
 
-            {/* Larger Table on the Right */}
             <div className="col-span-9 bg-white text-black p-6 rounded-lg shadow-lg">
                 <h2 className="text-lg font-semibold mb-4">Journal</h2>
                 <div className="ag-theme-alpine h-64 w-full overflow-auto">

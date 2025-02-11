@@ -17,10 +17,10 @@ const HorizontalMenu: React.FC = () => {
           <IconCalendar className="fill-rose-taupe w-8 h-8" />
           <h3 className="text-lg">Week</h3>
         </div>
-        <div className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
+        <Link to="/foodinfo" className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
           <IconDiet className="fill-rose-taupe w-8 h-8" />
           <h3 className="text-lg">Food info</h3>
-        </div>
+        </Link>
         <div className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
           <IconArticle className="fill-rose-taupe w-8 h-8" />
           <h3 className="text-lg">Articles</h3>
