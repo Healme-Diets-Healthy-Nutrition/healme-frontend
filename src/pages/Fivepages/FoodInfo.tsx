@@ -4,9 +4,7 @@ import Sidebar from '../../components/navigation/Sidebar'; // Adjust the path as
 const FoodInfo: React.FC = () => {
     return (
         <div>
-
-            <h1>Food Information</h1>
-            <p>This is the Food Information page.</p>
+            <Sidebar></Sidebar>
         </div>
     );
 };
