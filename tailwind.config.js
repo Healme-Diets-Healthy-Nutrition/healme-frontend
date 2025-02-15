@@ -169,7 +169,7 @@ export default {
   		colors: {
   			'rose-taupe': '#7D4F50',
   			'old-rose': '#CC8B86',
-  			linen: '#F9EAE1',
+  			'linen': '#F9EAE1',
   			'dark-gray': '#747474',
   			'white-smoke': '#F8F8F8',
   			'light-grayish-orange': '#F3D0C3',

@@ -3,7 +3,7 @@ import Navigation from './components/navbar/Navigation';
 import MainPage from './pages/MainPage';
 import Footer from './pages/footer/Footer';
 import Calories from './pages/Fivepages/Calories';
-import FoodInfo from './pages/Fivepages/FoodInfo';
+import FoodInfo from './pages/Fivepages/FoodInfo/FoodInfo';
 import { Route, Routes } from 'react-router';
 
 const App: React.FC = () => {

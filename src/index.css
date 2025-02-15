@@ -77,11 +77,11 @@
   --rose-taupe: #7D4F50;
   --old-rose: #CC8B86;
   --linen: #F9EAE1;
-  --dark-gray: #747474;
   --white-smoke: #F8F8F8;
-  --light-grayish-orange: #F3D0C3;
-  --grayish-red: #B39391;
+  --soft-peach: #F4C7AB; /* Updated Light Grayish Orange */
+  --muted-mauve: #A37575;
   --hover-outline: #E5CEBF;
+  --deep-charcoal: #5A5A5A; /* Updated Dark Gray */
 }
 
 @layer base {
