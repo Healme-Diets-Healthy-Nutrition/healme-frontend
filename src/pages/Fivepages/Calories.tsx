@@ -88,7 +88,7 @@ const Calories: React.FC = () => {
 ]);
 
   return (
-    <div className="grid grid-cols-12 gap-6 items-start bg-gray-100 p-6">
+    <div className="grid grid-cols-12 gap-6 items-start p-6 bg-white">
             <div className="col-span-3 bg-rose-taupe text-white p-6 rounded-lg shadow-lg">
                 <h2 className="text-lg font-semibold mb-4">Today</h2>
                 <div className="ag-theme-alpine h-64 w-full">

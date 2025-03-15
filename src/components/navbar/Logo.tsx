@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 
 const Logo: React.FC = () => {
     return (
-      <Link to='/mainpage'>
+      <Link to='/'>
         <LogoSvg className='h-9 w-36 cursor-pointer'></LogoSvg>
       </Link>
   );
