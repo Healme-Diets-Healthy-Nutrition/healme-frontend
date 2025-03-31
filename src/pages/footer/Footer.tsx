@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown, { LanguageOption } from '../../components/buttons/dropdown/DropDownButton';
+import Dropdown, { LanguageOption } from '../../components/ui/DropDownButton';
 import USFlag from "/src/assets/icons/flags/twemoji--flag-united-states.svg?react";
 import RUFlag from "/src/assets/icons/flags/twemoji--flag-russia.svg?react";
 import KZFlag from "/src/assets/icons/flags/twemoji--flag-kazakhstan.svg?react";

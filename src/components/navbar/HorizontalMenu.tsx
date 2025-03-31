@@ -10,23 +10,23 @@ const HorizontalMenu: React.FC = () => {
     <>
       <div className="h-13 w-full flex">
         <Link to="/recipe" className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
-          <IconRecipes className="fill-rose-taupe w-8 h-8" />
+          <IconRecipes className="fill-primary w-8 h-8" />
           <h3 className="text-lg">Recipes</h3>
         </Link>
         <div className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
-          <IconCalendar className="fill-rose-taupe w-8 h-8" />
+          <IconCalendar className="fill-primary w-8 h-8" />
           <h3 className="text-lg">Week</h3>
         </div>
         <Link to="/foodinfo" className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
-          <IconDiet className="fill-rose-taupe w-8 h-8" />
+          <IconDiet className="fill-primary w-8 h-8" />
           <h3 className="text-lg">Food info</h3>
         </Link>
         <Link to="/article"   className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
-          <IconArticle className="fill-rose-taupe w-8 h-8" />
+          <IconArticle className="fill-primary w-8 h-8" />
           <h3 className="text-lg">Articles</h3>
         </Link  >
         <Link to="/calories" className="h-13 w-76 gap-x-1 flex items-center justify-center cursor-pointer hover:border-b border-dark-gray">
-          <IconCalories className="fill-rose-taupe w-8 h-8" />
+          <IconCalories className="fill-primary w-8 h-8" />
           <h3 className="text-lg">Calories</h3>
         </Link>
       </div>

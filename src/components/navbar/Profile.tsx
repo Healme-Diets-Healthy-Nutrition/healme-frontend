@@ -22,7 +22,7 @@ const Profile: React.FC = () => {
       <div className="flex flex-col items-center justify-center focus:outline-hidden">
         <div className="flex gap-x-4">
           <button>Login</button>
-          <Button variant="default" onClick={handleModalOpen}>Sign Up</Button>
+          <Button variant="default" size="default" onClick={handleModalOpen}>Sign Up</Button>
         </div>
         {isModalActive && (
           <Modal onClose={handleModalClose}>
