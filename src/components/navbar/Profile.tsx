@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Modal from "../modal/index.tsx";
-import MyButton from "../buttons/MyButton.tsx";
 import InputComp from "../ui/InputComp";
 import IconApple from "../../assets/icons/brandIcons/socials/devicon--apple.svg?react";
 import IconFaceBook from "../../assets/icons/brandIcons/socials/devicon--facebook.svg?react";
 import IconGoogle from "../../assets/icons/brandIcons/socials/devicon--google.svg?react";
 import IconTwitter from "../../assets/icons/brandIcons/socials/devicon--twitter.svg?react";
+import { Button } from "../ui/button.tsx";
 
 const Profile: React.FC = () => {
   const [isModalActive, setModalActive] = useState(false);
@@ -22,7 +22,7 @@ const Profile: React.FC = () => {
       <div className="flex flex-col items-center justify-center focus:outline-hidden">
         <div className="flex gap-x-4">
           <button>Login</button>
-          <MyButton onClick={handleModalOpen}>Sign Up</MyButton>
+          <Button variant="default" onClick={handleModalOpen}>Sign Up</Button>
         </div>
         {isModalActive && (
           <Modal onClose={handleModalClose}>
@@ -32,7 +32,7 @@ const Profile: React.FC = () => {
                   <span>Sign Up</span>
                   <InputComp id="username" type="text" label="Username" />
                   <InputComp id="password" type="password" label="Password" />
-                  <MyButton>Sign Up</MyButton>
+                  <Button variant="default">Sign Up</Button>
                   <div className="flex items-center w-full my-4">
                     <div className="flex-1 border-t border-gray-300"></div>
                     <span className="px-4 text-gray-600 text-sm">or</span>
