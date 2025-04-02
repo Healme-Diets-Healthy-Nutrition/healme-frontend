@@ -1,11 +1,12 @@
+import { BrainCog, ChartPie, Newspaper, Truck } from "lucide-react";
 import React from "react";
 
 const MainPage: React.FC = () => {
   return (
     <>
       <section className="w-full h-72">
-        <div className="w-69 h-39 z-10 absolute bg-white-smoke ml-112 mt-13 content-center justify-center">
-          <h5 className="text-xl text-rose-taupe text-center">
+        <div className="w-69 h-39 z-10 absolute bg-background ml-112 mt-13 content-center justify-center">
+          <h5 className="text-xl text-foreground text-center">
             Science based nutrition
           </h5>
           <p className="text-center">
@@ -18,7 +19,7 @@ const MainPage: React.FC = () => {
         <h2 className="text-3xl font-regular text-center mb-14">Our priorities</h2>
         <div className="flex justify-between mx-84 gap-30">
           <div className="w-50 flex flex-col items-center text-center">
-            <div className="w-25 h-25 rounded-full bg-white-smoke border border-light-grayish-orange">
+            <div className="w-25 h-25 rounded-full bg-background border border-accent">
               <img
                 src="/src/assets/images/MainPage/knowledge_9793040.png"
                 alt="pic"
@@ -28,7 +29,7 @@ const MainPage: React.FC = () => {
             <p>Tackling food and nutrition illiteracy</p>
           </div>
           <div className="w-50 flex flex-col items-center text-center">
-            <div className="w-25 h-25 rounded-full bg-white-smoke border border-light-grayish-orange">
+            <div className="w-25 h-25 rounded-full bg-white-smoke border border-accent">
               <img
                 src="\src\assets\images\Mainpage\project-management_4844342.png"
                 alt="pic"
@@ -38,7 +39,7 @@ const MainPage: React.FC = () => {
             <p>Organized and well managed meal timing</p>
           </div>
           <div className="w-50 flex flex-col items-center text-center">
-            <div className="w-25 h-25 rounded-full bg-white-smoke border border-light-grayish-orange">
+            <div className="w-25 h-25 rounded-full bg-white-smoke border border-accent">
               <img
                 src="\src\assets\images\Mainpage\diet_706195.png"
                 alt="pic"
@@ -48,7 +49,7 @@ const MainPage: React.FC = () => {
             <p>Encouraging to eat more healthy </p>
           </div>
           <div className="w-50 flex flex-col items-center text-center">
-            <div className="w-25 h-25 rounded-full bg-white-smoke border border-light-grayish-orange">
+            <div className="w-25 h-25 rounded-full bg-white-smoke border border-accent">
               <img
                 src="\src\assets\images\Mainpage\promotion_3234909.png"
                 alt="pic"
@@ -59,58 +60,42 @@ const MainPage: React.FC = () => {
           </div>
         </div>
       </section>
-      <section className="w-full bg-linen py-16 px-4">
+      <section className="w-full bg-secondary py-16 px-4">
   <div className="max-w-screen-lg mx-auto">
-    <div className="w-full bg-old-rose text-2xl text-center flex items-center justify-center py-6 rounded-md mb-12">
-      <h1 className="text-black font-regular">How can we help you?</h1>
+    <div className="w-full bg-background text-2xl text-center flex items-center justify-center py-6 rounded-md mb-12">
+      <h1 className="text-foreground font-regular">How can we help you?</h1>
     </div>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div className="bg-white rounded-lg shadow-lg flex flex-col items-center text-center p-6 gap-y-4">
-        <div className="w-28 h-28 bg-old-rose rounded-full flex items-center justify-center">
-          <img
-            src="/src/assets/images/Mainpage/new-features_10435175.png"
-            alt="Information Icon"
-            className="w-16 h-16"
-          />
+      <div className="bg-background rounded-lg shadow-lg flex flex-col items-center text-center p-6 gap-y-4">
+        <div className="w-28 h-28 bg-secondary rounded-full flex items-center justify-center">
+        <Newspaper className="w-16 h-16 text-secondary-foreground"/>
         </div>
-        <p className="text-gray-700 text-sm">We provide the latest and valuable information about food.</p>
+        <p className="text-foreground text-sm">We provide the latest and valuable information about food.</p>
       </div>
-      <div className="bg-white rounded-lg shadow-lg flex flex-col items-center text-center p-6 gap-y-4">
-        <div className="w-28 h-28 bg-old-rose rounded-full flex items-center justify-center">
-          <img
-            src="/src/assets/images/Mainpage/gear_3088881.png"
-            alt="Automation Icon"
-            className="w-16 h-16"
-          />
+      <div className="bg-background rounded-lg shadow-lg flex flex-col items-center text-center p-6 gap-y-4">
+        <div className="w-28 h-28 bg-secondary rounded-full flex items-center justify-center">
+        <BrainCog className="w-16 h-16 text-secondary-foreground"/>
         </div>
-        <p className="text-gray-700 text-sm">Automation for choosing meals and snacks.</p>
+        <p className="text-foreground text-sm">Automation for choosing meals and snacks.</p>
       </div>
-      <div className="bg-white rounded-lg shadow-lg flex flex-col items-center text-center p-6 gap-y-4">
-        <div className="w-28 h-28 bg-old-rose rounded-full flex items-center justify-center">
-          <img
-            src="/src/assets/images/Mainpage/delivery-truck_316567.png"
-            alt="Delivery Icon"
-            className="w-16 h-16"
-          />
+      <div className="bg-background rounded-lg shadow-lg flex flex-col items-center text-center p-6 gap-y-4">
+        <div className="w-28 h-28 bg-secondary rounded-full flex items-center justify-center">
+        <Truck className="w-16 h-16 text-secondary-foreground"/>
         </div>
-        <p className="text-gray-700 text-sm">Delivery options with a variety of diets.</p>
+        <p className="text-foreground text-sm">Delivery options with a variety of diets.</p>
       </div>
-      <div className="bg-white rounded-lg shadow-lg flex flex-col items-center text-center p-6 gap-y-4">
-        <div className="w-28 h-28 bg-old-rose rounded-full flex items-center justify-center">
-          <img
-            src="/src/assets/images/Mainpage/pie-chart_8352720.png"
-            alt="Statistics Icon"
-            className="w-16 h-16"
-          />
+      <div className="bg-background rounded-lg shadow-lg flex flex-col items-center text-center p-6 gap-y-4">
+        <div className="w-28 h-28 bg-secondary rounded-full flex items-center justify-center">
+        <ChartPie className="w-16 h-16 text-secondary-foreground"/>
         </div>
-        <p className="text-gray-700 text-sm">Statistics on your diet and journaling money spending.</p>
+        <p className="text-foreground text-sm">Statistics on your diet and journaling money spending.</p>
       </div>
     </div>
   </div>
 </section>
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-auto my-8 w-fit max-w-screen-lg">
-  <div className="bg-grayish-red rounded-b-xl overflow-hidden shadow-lg">
+  <div className="bg-secondary rounded-b-xl overflow-hidden shadow-lg">
     <div className="w-full aspect-w-4 aspect-h-3">
       <img
         src="/src/assets/images/MainPage/Almond-Orange-Healthy-Granola-Bars-with-Coconut-and-Honey-500x375.jpg"
@@ -118,12 +103,12 @@ const MainPage: React.FC = () => {
         className="object-cover w-full h-full"
       />
     </div>
-    <div className="w-12 h-8 bg-rose-taupe rounded-2xl text-xs text-white-smoke flex items-center justify-center mt-3 ml-3">
+    <div className="w-12 h-8 bg-accent rounded-2xl text-xs text-accent-foreground flex items-center justify-center mt-3 ml-3">
       Article
     </div>
-    <p className="text-white-smoke mx-3 mt-2">12 Healthy Granola Bars</p>
+    <p className="text-secondary-foreground mx-3 mt-2">12 Healthy Granola Bars</p>
   </div>
-  <div className="bg-grayish-red rounded-b-xl overflow-hidden shadow-lg">
+  <div className="bg-secondary rounded-b-xl overflow-hidden shadow-lg">
     <div className="w-full aspect-w-4 aspect-h-3">
       <img
         src="/src/assets/images/Mainpage/cf189f61d1b1221fe0ca3eac18dfc218639d5384.webp"
@@ -131,14 +116,14 @@ const MainPage: React.FC = () => {
         className="object-cover w-full h-full"
       />
     </div>
-    <div className="w-12 h-8 bg-rose-taupe rounded-2xl text-xs text-white-smoke flex items-center justify-center mt-3 ml-3">
+    <div className="w-12 h-8 bg-accent rounded-2xl text-xs text-accent-foreground flex items-center justify-center mt-3 ml-3">
       Article
     </div>
-    <p className="text-white-smoke mx-3 mt-2">
+    <p className="text-secondary-foreground mx-3 mt-2">
       The 7 Best Rice Cookers for Perfect Rice Every Time
     </p>
   </div>
-  <div className="bg-grayish-red rounded-b-xl overflow-hidden shadow-lg">
+  <div className="bg-secondary rounded-b-xl overflow-hidden shadow-lg">
     <div className="w-full aspect-w-4 aspect-h-3">
       <img
         src="/src/assets/images/Mainpage/fish_food_omega_image_one-750x422.jpg"
@@ -146,12 +131,12 @@ const MainPage: React.FC = () => {
         className="object-cover w-full h-full"
       />
     </div>
-    <div className="w-12 h-8 bg-rose-taupe rounded-2xl text-xs text-white-smoke flex items-center justify-center mt-3 ml-3">
+    <div className="w-12 h-8 bg-accent rounded-2xl text-xs text-accent-foreground flex items-center justify-center mt-3 ml-3">
       Article
     </div>
-    <p className="text-white-smoke mx-3 mt-2">Benefits of Eating Fish</p>
+    <p className="text-secondary-foreground mx-3 mt-2">Benefits of Eating Fish</p>
   </div>
-  <div className="bg-grayish-red rounded-b-xl overflow-hidden shadow-lg">
+  <div className="bg-secondary rounded-b-xl overflow-hidden shadow-lg">
     <div className="w-full aspect-w-4 aspect-h-3">
       <img
         src="/src/assets/images/Mainpage/spices_good_1-750x468.jpg"
@@ -159,10 +144,10 @@ const MainPage: React.FC = () => {
         className="object-cover w-full h-full"
       />
     </div>
-    <div className="w-12 h-8 bg-rose-taupe rounded-2xl text-xs text-white-smoke flex items-center justify-center mt-3 ml-3">
+    <div className="w-12 h-8 bg-accent rounded-2xl text-xs text-accent-foreground flex items-center justify-center mt-3 ml-3">
       Article
     </div>
-    <p className="text-white-smoke mx-3 mt-2">
+    <p className="text-secondary-foreground mx-3 mt-2">
       The Healthiest Spices You Can Use Every Day
     </p>
   </div>

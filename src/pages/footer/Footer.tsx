@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
 
     return (
 
-        <footer className="w-screen h-100 bg-grayish-red">
+        <footer className="w-screen h-100 bg-secondary">
             <div className="flex">
                 <div className="grid grid-cols-3 gap-y-6 text-white mt-14 ml-23">
                     <ul className="w-19 h-38 grid gap-x-6">

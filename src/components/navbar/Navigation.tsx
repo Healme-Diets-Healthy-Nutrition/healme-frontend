@@ -7,7 +7,7 @@ import HorizontalMenu from "./HorizontalMenu";
 const Navigation: React.FC = () => {
   return (
     <div className="h-37 mb-14">
-      <div className="h-24 w-screen bg-linen">
+      <div className="h-24 w-screen bg-secondary-background">
         <div className="flex items-center justify-between px-8 h-full">
           <Logo></Logo>
 
