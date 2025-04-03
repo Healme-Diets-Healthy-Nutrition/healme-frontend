@@ -9,6 +9,7 @@ import IconYT from "/src/assets/icons/brandicons/cib--youtube.svg?react";
 import IconIG from "/src/assets/icons/brandicons/cib--instagram.svg?react";
 import IconTT from "/src/assets/icons/brandicons/cib--tiktok.svg?react";
 import IconDis from "/src/assets/icons/brandicons/cib--discord.svg?react";
+import DropDownButton2 from '@/components/buttons/dropdown/DropDownButton2';
 
 const Footer: React.FC = () => {
     const languages: LanguageOption[] = [
@@ -17,7 +18,7 @@ const Footer: React.FC = () => {
         { label: "Qazaqşa", flag: <KZFlag /> },
     ];
 
-    const [, setSelectedLanguage] = React.useState(null as LanguageOption | null);
+    const [,setSelectedLanguage] = React.useState(null as LanguageOption | null);
     const handleLanguageChange = (language: LanguageOption) =>
         setSelectedLanguage(language);
 
@@ -50,17 +51,18 @@ const Footer: React.FC = () => {
                     defaultOption={languages[0]}
                     onSelect={handleLanguageChange}
                 />
+                <DropDownButton2></DropDownButton2>
             </div>
-            <hr className="w-1/2 h-0.5 bg-white flex items-center justify-center mx-auto my-20" />
+            <hr className="w-1/2 h-0.5 bg-secondary-foreground flex items-center justify-center mx-auto my-20" />
             <div className="flex justify-between mx-16 my-8">
-                <span className="text-white">HealMe © 2025 All rights reserved</span>
+                <span className="text-secondary-foreground">HealMe © 2025 All rights reserved</span>
                 <span className="flex items-center space-x-4">
-                    <IconX className="w-8 h-8 fill-rose-taupe hover:fill-[#000000]" />
-                    <IconWP className="w-8 h-8 fill-rose-taupe hover:fill-[#075E54]" />
-                    <IconYT className="w-8 h-8 fill-rose-taupe hover:fill-[#FF0000]" />
-                    <IconIG className="w-8 h-8 fill-rose-taupe hover:fill-[#E1306C]" />
-                    <IconTT className="w-8 h-8 fill-rose-taupe hover:fill-[#000000]" />
-                    <IconDis className="w-8 h-8 fill-rose-taupe hover:fill-[#5865F2]" />
+                    <IconX className="w-8 h-8 fill-accent hover:fill-[#000000] cursor-pointer" />
+                    <IconWP className="w-8 h-8 fill-accent hover:fill-[#075E54] cursor-pointer" />
+                    <IconYT className="w-8 h-8 fill-accent hover:fill-[#FF0000] cursor-pointer" />
+                    <IconIG className="w-8 h-8 fill-accent hover:fill-[#E1306C] cursor-pointer" />
+                    <IconTT className="w-8 h-8 fill-accent hover:fill-[#000000] cursor-pointer" />
+                    <IconDis className="w-8 h-8 fill-accent hover:fill-[#5865F2] cursor-pointer" />
                 </span>
             </div>
 

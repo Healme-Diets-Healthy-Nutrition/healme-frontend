@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import type { MouseEventHandler } from "react";
 import Portal from "../../helpers/portal";
-import { createContainer } from "../../utils/portalUtils";
+import { createContainer } from "../../lib/portalUtils";
 import IconClose from "../../assets/icons/ui/close.svg?react"
 import Logo from "../navbar/Logo";
 

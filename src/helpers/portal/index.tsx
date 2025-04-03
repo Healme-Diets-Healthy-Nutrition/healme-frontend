@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { PORTAL_ERROR_MSG } from "../../utils/portalUtils";
+import { PORTAL_ERROR_MSG } from "../../lib/portalUtils";
 
 type PortalProps = {
   id: string;
