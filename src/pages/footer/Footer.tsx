@@ -5,7 +5,7 @@ import IconYT from "/src/assets/icons/brandicons/cib--youtube.svg?react";
 import IconIG from "/src/assets/icons/brandicons/cib--instagram.svg?react";
 import IconTT from "/src/assets/icons/brandicons/cib--tiktok.svg?react";
 import IconDis from "/src/assets/icons/brandicons/cib--discord.svg?react";
-import LangButton from '@/components/buttons/dropdown/DropDownButton2';
+import LangButton from '@/components/buttons/dropdown/LangButton';
 
 const Footer: React.FC = () => {
     return (
