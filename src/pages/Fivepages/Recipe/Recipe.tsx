@@ -1,4 +1,4 @@
-import RecipeSidebar from "@/components/navigation/RecipeSidebar";
+import RecipeSidebar from "@/components/modComponents/navigation/RecipeSidebar";
 import React from "react";
 
 const menuItems = [

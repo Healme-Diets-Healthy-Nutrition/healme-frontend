@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '@/components/navigation/Sidebar'; 
+import Sidebar from '@/components/modComponents/navigation/Sidebar'; 
 import { Outlet } from 'react-router-dom';
 
 const menuData = [

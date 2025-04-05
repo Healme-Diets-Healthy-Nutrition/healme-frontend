@@ -1,12 +1,12 @@
 import React from 'react';
-import Navigation from './components/navbar/Navigation';
+import Navigation from './components/modComponents/navbar/Navigation';
 import MainPage from './pages/MainPage';
 import Footer from './pages/footer/Footer';
 import Calories from './pages/Fivepages/Calories';
 import FoodInfo from './pages/Fivepages/FoodInfo/FoodInfo';
 import { Route, Routes } from 'react-router-dom';
 import Recipe from './pages/Fivepages/Recipe/Recipe';
-import FoodDetail from './components/InfoCards/FoodDetail';
+import FoodDetail from './components/modComponents/InfoCards/FoodDetail';
 import FoodTables from './pages/Fivepages/FoodInfo/FoodTables';
 import VegetableTables from './pages/Fivepages/FoodInfo/Vegetables';
 import Fruits from './pages/Fivepages/FoodInfo/Fruits';

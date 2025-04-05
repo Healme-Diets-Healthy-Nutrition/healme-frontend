@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Modal from "../modal/index.tsx";
-import InputComp from "../ui/InputComp";
-import IconApple from "../../assets/icons/brandIcons/socials/devicon--apple.svg?react";
-import IconFaceBook from "../../assets/icons/brandIcons/socials/devicon--facebook.svg?react";
-import IconGoogle from "../../assets/icons/brandIcons/socials/devicon--google.svg?react";
-import IconTwitter from "../../assets/icons/brandIcons/socials/devicon--twitter.svg?react";
-import { Button } from "../ui/button.tsx";
+import Modal from "@/components/modComponents/modal";
+import InputComp from "@/components/ui/InputComp";
+import { Button } from "@/components/ui/button";
+import IconApple from "@/assets/icons/brandIcons/socials/devicon--apple.svg?react";
+import IconFaceBook from "@/assets/icons/brandIcons/socials/devicon--facebook.svg?react";
+import IconGoogle from "@/assets/icons/brandIcons/socials/devicon--google.svg?react";
+import IconTwitter from "@/assets/icons/brandIcons/socials/devicon--twitter.svg?react";
 
 const Profile: React.FC = () => {
   const [isModalActive, setModalActive] = useState(false);

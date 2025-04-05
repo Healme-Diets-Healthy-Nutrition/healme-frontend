@@ -5,13 +5,13 @@ import IconYT from "/src/assets/icons/brandicons/cib--youtube.svg?react";
 import IconIG from "/src/assets/icons/brandicons/cib--instagram.svg?react";
 import IconTT from "/src/assets/icons/brandicons/cib--tiktok.svg?react";
 import IconDis from "/src/assets/icons/brandicons/cib--discord.svg?react";
-import LangButton from '@/components/buttons/dropdown/LangButton';
+import LangButton from '@/components/modComponents/buttons/LangButton';
 
 const Footer: React.FC = () => {
     return (
 
         <footer className="w-screen h-100 bg-secondary">
-            <div className="flex">
+            <div className="flex justify-start items-center">
                 <div className="grid grid-cols-3 gap-y-6 text-white mt-14 ml-23">
                     <ul className="w-19 h-38 grid gap-x-6">
                         <li className="font-bold ">Link 0</li>
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
                         <li>Link 3</li>
                     </ul>
                 </div>
-                <LangButton></LangButton>
+                <LangButton ></LangButton>
             </div>
             <hr className="w-1/2 h-0.5 bg-secondary-foreground flex items-center justify-center mx-auto my-20" />
             <div className="flex justify-between mx-16 my-8">

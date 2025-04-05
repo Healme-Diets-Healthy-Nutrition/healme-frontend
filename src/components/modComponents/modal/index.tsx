@@ -1,9 +1,9 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import type { MouseEventHandler } from "react";
-import Portal from "../../helpers/portal";
-import { createContainer } from "../../lib/portalUtils";
-import IconClose from "../../assets/icons/ui/close.svg?react"
-import Logo from "../navbar/Logo";
+import Portal from "@/helpers/portal";
+import { createContainer } from "@/lib/portalUtils";
+import IconClose from "@/assets/icons/ui/close.svg?react";
+import Logo from "@/components/modComponents/navbar/Logo";
 
 const MODAL_CONTAINER_ID = "modal-container-id";
 

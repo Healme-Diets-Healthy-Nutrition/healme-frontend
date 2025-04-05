@@ -9,7 +9,7 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
-import Sidebar from "@/components/navigation/Sidebar";
+import Sidebar from "@/components/modComponents/navigation/Sidebar";
 
 const ArticleData = [
   {
