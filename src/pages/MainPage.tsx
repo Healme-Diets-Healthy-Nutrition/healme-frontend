@@ -1,6 +1,6 @@
 import { BrainCog, ChartPie, Newspaper, Truck } from "lucide-react";
 import React from "react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { AspectRatio } from "@/components/ui/shadcn/aspect-ratio";
 
 const MainPage: React.FC = () => {
   return (

@@ -8,7 +8,7 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from "@/components/ui/pagination";
+} from "@/components/ui/shadcn/pagination";
 import Sidebar from "@/components/modComponents/navigation/Sidebar";
 
 const ArticleData = [

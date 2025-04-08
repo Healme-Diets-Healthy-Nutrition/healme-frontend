@@ -5,7 +5,7 @@ import {
   SelectGroup,
   SelectItem,
   SelectTrigger,
-} from "@/components/ui/select";
+} from "@/components/ui/shadcn/select";
 import { US, RU, KZ } from "country-flag-icons/react/3x2";
 
 const languages = [
