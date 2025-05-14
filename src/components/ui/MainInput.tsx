@@ -10,7 +10,7 @@ const InputComp = forwardRef<HTMLInputElement, InputProps>(
   ({ className, label, id, ...props }, ref) => (
     <label
       htmlFor={id}
-      className="relative block rounded-md border border-gray-200 shadow-xs focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600"
+      className="relative block rounded-md border border-gray-200 shadow-xs focus-within:border-primary focus-within:ring-1 focus-within:ring-primary"
     >
       <input
         id={id}

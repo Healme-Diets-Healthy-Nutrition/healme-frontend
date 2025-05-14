@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 function LogoGreen() {
   return (
-    <Link to="/"><LogoSvgGreen className="w-36 h-10"/></Link>
+    <Link to="/"><LogoSvgGreen className="w-30 h-10"/></Link>
   )
 }
 

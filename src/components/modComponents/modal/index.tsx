@@ -3,7 +3,8 @@ import type { MouseEventHandler } from "react";
 import Portal from "@/helpers/portal";
 import { createContainer } from "@/lib/portalUtils";
 import IconClose from "@/assets/icons/ui/close.svg?react";
-import Logo from "@/components/modComponents/navbar/Logo";
+// import Logo from "@/components/modComponents/navbar/Logo";
+import LogoGreen from "../navbar/LogoGreen";
 
 const MODAL_CONTAINER_ID = "modal-container-id";
 
@@ -13,7 +14,7 @@ type Props = {
 };
 
 const Modal = (props: Props) => {
-  const {onClose, children } = props;
+  const { onClose, children } = props;
   const rootRef = useRef<HTMLDivElement>(null);
   const [isMounted, setMounted] = useState(false);
 
@@ -50,13 +51,19 @@ const Modal = (props: Props) => {
 
   return isMounted ? (
     <Portal id={MODAL_CONTAINER_ID}>
-      <div ref={rootRef} className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+      <div
+        ref={rootRef}
+        className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+      >
         <div className="w-256 max-w-[90vw] h-192 rounded-xl shadow-xl flex relative">
-          <div className="absolute top-0 left-[60%] -translate-x-1/2 -mt-6 z-20">
-            <Logo />
+          <div className="absolute top-0 left-[30%] -translate-x-1/2 mt-6 z-20">
+            <LogoGreen />
           </div>
           {children}
-          <div onClick={handleClose} className="absolute top-4 right-4 cursor-pointer text-gray-600 hover:text-gray-900 transition duration-200">
+          <div
+            onClick={handleClose}
+            className="absolute top-4 right-4 cursor-pointer text-gray-300 hover:text-gray-900 transition duration-200"
+          >
             <IconClose className="w-6 h-6" />
           </div>
         </div>
