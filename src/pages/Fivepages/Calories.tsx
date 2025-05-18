@@ -6,24 +6,25 @@ import { themeQuartz, iconSetMaterial } from 'ag-grid-community';
 ModuleRegistry.registerModules([AllCommunityModule]);
 
 const myTheme = themeQuartz
-    .withPart(iconSetMaterial)
-    .withParams({
-        accentColor: "#7D4F50",
-        backgroundColor: "#F8F8F8",
-        browserColorScheme: "light",
-        cellTextColor: "#000000",
-        chromeBackgroundColor: {
-            ref: "foregroundColor",
-            mix: 0.07,
-            onto: "backgroundColor"
-        },
-        fontFamily: "inherit",
-        fontSize: 16,
-        foregroundColor: "#747474",
-        headerBackgroundColor: "#B39391",
-        headerFontSize: 16,
-        headerTextColor: "#F8F8F8"
-    });
+  .withPart(iconSetMaterial)
+  .withParams({
+    accentColor: "var(--accent)",
+    backgroundColor: "var(--background)",
+    browserColorScheme: "light",
+    cellTextColor: "var(--foreground)",
+    chromeBackgroundColor: {
+      ref: "foregroundColor",
+      mix: 0.07,
+      onto: "backgroundColor",
+    }, 
+    fontFamily: "inherit",
+    fontSize: 16,
+    foregroundColor: "var(--muted-foreground)",
+    headerBackgroundColor: "var(--muted)",
+    headerFontSize: 16,
+    headerTextColor: "var(--muted-foreground)",
+  });
+
 
 export interface RowData1 {
   nutrient: string;
@@ -88,15 +89,15 @@ const Calories: React.FC = () => {
 ]);
 
   return (
-    <div className="grid grid-cols-12 gap-6 items-start p-6 bg-white">
-            <div className="col-span-3 bg-rose-taupe text-white p-6 rounded-lg shadow-lg">
+    <div className="grid grid-cols-12 gap-6 items-start p-6 bg-background">
+            <div className="col-span-3 bg-rose-taupe text-white p-6 rounded-lg shadow-lg bg-muted">
                 <h2 className="text-lg font-semibold mb-4">Today</h2>
                 <div className="ag-theme-alpine h-64 w-full">
                     <AgGridReact rowData={rowData1} columnDefs={colDefs1} gridOptions={gridOptions1} />
                 </div>
             </div>
 
-            <div className="col-span-9 bg-white text-black p-6 rounded-lg shadow-lg">
+            <div className="col-span-9 bg-background text-black p-6 rounded-lg shadow-lg">
                 <h2 className="text-lg font-semibold mb-4">Journal</h2>
                 <div className="ag-theme-alpine h-64 w-full overflow-auto">
                     <AgGridReact rowData={rowData2} columnDefs={colDefs2} gridOptions={gridOptions2} />

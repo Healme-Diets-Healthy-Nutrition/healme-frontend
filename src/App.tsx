@@ -12,6 +12,7 @@ import VegetableTables from './pages/Fivepages/FoodInfo/Vegetables';
 import Fruits from './pages/Fivepages/FoodInfo/Fruits';
 import Meats from './pages/Fivepages/FoodInfo/Meats';
 import Article from './pages/Fivepages/Article';
+import Week from './pages/Fivepages/Week';
 
 const App: React.FC = () => {
 
@@ -21,6 +22,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/recipe" element={<Recipe />} />
+        <Route path="/week" element={<Week />}/>
         <Route path="/calories" element={<Calories />} />
         <Route path="/foodInfo" element={<FoodInfo />}>
           <Route index element={<FoodTables />} /> 

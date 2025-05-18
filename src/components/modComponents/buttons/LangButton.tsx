@@ -24,7 +24,7 @@ export function LangButton() {
         setSelectedLanguage(selected || languages[0]);
       }}
     >
-      <SelectTrigger className="w-[180px]">
+      <SelectTrigger className="w-[180px] bg-background">
         <div className="flex items-center gap-2">
           {selectedLanguage.icon}
           {selectedLanguage.label}
